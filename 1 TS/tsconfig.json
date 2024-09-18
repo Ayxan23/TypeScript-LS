@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["ES6", "DOM","DOM.Iterable"], //ligrary: EcmaScript standarts(last), Document Object Model
+    "target": "ES6",
+    "strict": true, //strong type checking
+    "module": "ES6", //(CommonJS) for node js
+     "moduleResolution": "Node", //(Node) for node js
+    "esModuleInterop": true, //import
+    "allowSyntheticDefaultImports": true, //for modules
+    "outDir": "dist",
+    "rootDir": "src"
+    // "declaration": true, //type'lar index.js'de gorunmeyi ucun
+    // "noUnusedParameters": false, //isledilmedikde silmeyini tovsiye edir
+    //"noUnusedLocals": false //isledilmedikde silmeyini tovsiye edir
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

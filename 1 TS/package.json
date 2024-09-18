@@ -1,0 +1,26 @@
+{
+  "name": "1-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "node scripts/deleteDist.js && tsc",
+    "delete:dist": "node scripts/deleteDist.js",
+    "dev": "npm run delete:dist && tsc-watch --onSuccess  \"npm run start\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "express": "^4.21.0",
+    "node-fetch": "^2.6.1"
+  }
+}
